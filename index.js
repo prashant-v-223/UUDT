@@ -508,7 +508,7 @@ schedule.scheduleJob(every24hours, async () => {
 });
 const maxTimeDifference = 5 * 60 * 1000;
 app.get("/", async (req, res) => {
-  console.log("Transaction is valid within 5 minutes.", block);
+  console.log("Transaction is valid within 5 minutes.");
 });
 const LOCALPORT = process.env.PORT || 8080;
 
