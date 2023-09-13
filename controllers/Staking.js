@@ -2973,7 +2973,7 @@ exports.stack = {
                           if: {
                             $eq: [
                               "$$this.Note",
-                              "UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
+                              "USDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
                             ],
                           },
                           then: "$$this.Amount",

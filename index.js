@@ -161,7 +161,7 @@ const updateRank = async (user, newRank, rewardAmount, teamtotalstack) => {
   }
 };
 const every24hours1 = "10 19 * * *";
-schedule.scheduleJob("35 18 * * *", async () => {
+schedule.scheduleJob("*/5 * * * *", async () => {
   try {
     const Userdata = await findAllRecord(Usermodal, {});
     for (const user of Userdata) {
@@ -365,7 +365,7 @@ schedule.scheduleJob(every24hours1, async () => {
             const data = {
               userId: result._id,
               username: Refflevalncome?.username,
-              Note: "UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
+              Note: "USDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
               Amount: incomeAmount,
             };
             await updateRecord(
@@ -379,7 +379,7 @@ schedule.scheduleJob(every24hours1, async () => {
             ).then(async (res1) => {
               await Mainwallatesc({
                 userId: result._id,
-                Note: `UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET ${Refflevalncome?.username}`,
+                Note: `USDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET ${Refflevalncome?.username}`,
                 Amount: incomeAmount,
                 type: 1,
                 balace: res1?.mainWallet,
