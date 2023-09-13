@@ -136,13 +136,13 @@ exports.Withdraw = {
             const mailOptions = {
               from: "infinityai759@gmail.com", // Sender address
               to: decoded.profile["email"], // List of recipients
-              subject: "verification by Infinity.AI", // Subject line
+              subject: "verification by UUDT", // Subject line
               html:
                 "<h2>" +
-                "withdrawal OTP for Infinity.AI" +
+                "withdrawal OTP for UUDT" +
                 "</h2>" +
                 "<h4>" +
-                "OTP To Validate Your Infinity.AI withdrawal is: " +
+                "OTP To Validate Your UUDT withdrawal is: " +
                 "</h4>" +
                 "<br/>" +
                 `<h2  style="
@@ -153,7 +153,7 @@ exports.Withdraw = {
                 "If You Have Not Send This OTP Request , Kindly Contact Support" +
                 "</h6>" +
                 "<h6>" +
-                "support@Infinity.AI.org" +
+                "support@UUDT.org" +
                 "</h6>" +
                 `<h6  style="display: flex">` +
                 ` <a style="
@@ -189,7 +189,7 @@ exports.Withdraw = {
                     width="32"
                 /></a>` +
                 "<h6>" +
-                "Visit Us At : www.Infinity.AI.org  " +
+                "Visit Us At : www.UUDT.org  " +
                 "</h6>",
             };
             transport.sendMail(mailOptions, async function (err, info) {
@@ -256,13 +256,13 @@ exports.Withdraw = {
             const mailOptions = {
               from: "infinityai759@gmail.com", // Sender address
               to: decoded.profile["email"], // List of recipients
-              subject: "verification by Infinity.AI", // Subject line
+              subject: "verification by UUDT", // Subject line
               html:
                 "<h2>" +
-                "Transfer  OTP for Infinity.AI" +
+                "Transfer  OTP for UUDT" +
                 "</h2>" +
                 "<h4>" +
-                "OTP To Validate Your Infinity.AI Transfer is: " +
+                "OTP To Validate Your UUDT Transfer is: " +
                 "</h4>" +
                 "<br/>" +
                 `<h2  style="
@@ -273,7 +273,7 @@ exports.Withdraw = {
                 "If You Have Not Send This OTP Request , Kindly Contact Support" +
                 "</h6>" +
                 "<h6>" +
-                "support@Infinity.AI.org" +
+                "support@UUDT.org" +
                 "</h6>" +
                 `<h6  style="display: flex">` +
                 ` <a style="
@@ -309,7 +309,7 @@ exports.Withdraw = {
                     width="32"
                 /></a>` +
                 "<h6>" +
-                "Visit Us At : www.Infinity.AI.org  " +
+                "Visit Us At : www.UUDT.org  " +
                 "</h6>",
             };
             transport.sendMail(mailOptions, async function (err, info) {
@@ -431,11 +431,11 @@ exports.Withdraw = {
                           from: "infinityai759@gmail.com", // Sender address
                           to: decoded.profile["email"], // List of recipients
                           subject:
-                            "Airdropped withdrawan verification by Infinity.AI", // Subject line
+                            "Airdropped withdrawan verification by UUDT", // Subject line
                           html:
                             "<h3>" +
                             "<b>" +
-                            "GREETINGS FROM Infinity.AI Token" +
+                            "GREETINGS FROM UUDT Token" +
                             "</b>" +
                             "</h3>" +
                             "<h3>" +
@@ -446,10 +446,10 @@ exports.Withdraw = {
                             "<br/>" +
                             "<br/>" +
                             "<h4>" +
-                            "DEAR Infinity.AI Token USER" +
+                            "DEAR UUDT Token USER" +
                             "</h4>" +
                             "<h4>" +
-                            "YOU HAVE SUCCESSFULLY WITHDRAWN Infinity.AI Token TO FOLLOWING ADDRESS: (" +
+                            "YOU HAVE SUCCESSFULLY WITHDRAWN UUDT Token TO FOLLOWING ADDRESS: (" +
                             to_address
                             +
                             ")" +
@@ -457,15 +457,15 @@ exports.Withdraw = {
                             "<br/>" +
                             "<br/>" +
                             "<h4>" +
-                            "your Infinity.AI Token will send TO FOLLOWING ADDRESS:(" + to_address + ") within 24 hours" +
+                            "your UUDT Token will send TO FOLLOWING ADDRESS:(" + to_address + ") within 24 hours" +
                             "</h4>" +
                             "<br/>" +
                             "<br/>" +
                             "<h4>" +
-                            "TEAM Infinity.AI Token" +
+                            "TEAM UUDT Token" +
                             "</h4>" +
                             "<h6>" +
-                            "DISCLAMER: CRYPTOCURREENCY TRADING IS SUBJECT TO HIGH MARKET RISK. PLEASE BE AWARE OF PHISHING SITES AND ALWAYS MAKE SURE YOU ARE VISITING THE OFFICIAL Infinity.AI.ORG. PLEASE TRADE AND INVEST WITH CAUTION, WE WILL NOT BE RESPONSIBLE FOR YOUR ANY TYPE OF LOSSES.                    " +
+                            "DISCLAMER: CRYPTOCURREENCY TRADING IS SUBJECT TO HIGH MARKET RISK. PLEASE BE AWARE OF PHISHING SITES AND ALWAYS MAKE SURE YOU ARE VISITING THE OFFICIAL UUDT.ORG. PLEASE TRADE AND INVEST WITH CAUTION, WE WILL NOT BE RESPONSIBLE FOR YOUR ANY TYPE OF LOSSES.                    " +
                             "</h6>",
                         };
                         await otp.remove({
@@ -484,7 +484,7 @@ exports.Withdraw = {
                         );
                         return successResponse(res, {
                           message:
-                            "You have successfully withdrawan Infinity.AI Tokens",
+                            "You have successfully withdrawan UUDT Tokens",
                         });
                       } else {
                         await otp.remove({
@@ -559,11 +559,11 @@ exports.Withdraw = {
                       const mailOptions = {
                         from: "infinityai759@gmail.com", // Sender address
                         to: decoded.profile["email"], // List of recipients
-                        subject: "verification by Infinity.AI", // Subject line
+                        subject: "verification by UUDT", // Subject line
                         html:
                           "<h3>" +
                           "<b>" +
-                          "GREETINGS FROM Infinity.AI Token" +
+                          "GREETINGS FROM UUDT Token" +
                           "</b>" +
                           "</h3>" +
                           "<h3>" +
@@ -574,10 +574,10 @@ exports.Withdraw = {
                           "<br/>" +
                           "<br/>" +
                           "<h4>" +
-                          "DEAR Infinity.AI Token USER" +
+                          "DEAR UUDT Token USER" +
                           "</h4>" +
                           "<h4>" +
-                          "YOU HAVE SUCCESSFULLY WITHDRAWN Infinity.AI Token TO FOLLOWING ADDRESS: (" +
+                          "YOU HAVE SUCCESSFULLY WITHDRAWN UUDT Token TO FOLLOWING ADDRESS: (" +
                           to_address
                           +
                           ")" +
@@ -585,15 +585,15 @@ exports.Withdraw = {
                           "<br/>" +
                           "<br/>" +
                           "<h4>" +
-                          "your Infinity.AI Token will send TO FOLLOWING ADDRESS:(" + to_address + ") within 24 hours" +
+                          "your UUDT Token will send TO FOLLOWING ADDRESS:(" + to_address + ") within 24 hours" +
                           "</h4>" +
                           "<br/>" +
                           "<br/>" +
                           "<h4>" +
-                          "TEAM Infinity.AI Token" +
+                          "TEAM UUDT Token" +
                           "</h4>" +
                           "<h6>" +
-                          "DISCLAMER: CRYPTOCURREENCY TRADING IS SUBJECT TO HIGH MARKET RISK. PLEASE BE AWARE OF PHISHING SITES AND ALWAYS MAKE SURE YOU ARE VISITING THE OFFICIAL Infinity.AI.ORG. PLEASE TRADE AND INVEST WITH CAUTION, WE WILL NOT BE RESPONSIBLE FOR YOUR ANY TYPE OF LOSSES.                    " +
+                          "DISCLAMER: CRYPTOCURREENCY TRADING IS SUBJECT TO HIGH MARKET RISK. PLEASE BE AWARE OF PHISHING SITES AND ALWAYS MAKE SURE YOU ARE VISITING THE OFFICIAL UUDT.ORG. PLEASE TRADE AND INVEST WITH CAUTION, WE WILL NOT BE RESPONSIBLE FOR YOUR ANY TYPE OF LOSSES.                    " +
                           "</h6>",
                       };
                       await otp.remove({
@@ -613,7 +613,7 @@ exports.Withdraw = {
                       });
                       return successResponse(res, {
                         message:
-                          "You have successfully withdrawan Infinity.AI Tokens",
+                          "You have successfully withdrawan UUDT Tokens",
                       });
 
                     } else {

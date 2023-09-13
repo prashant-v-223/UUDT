@@ -908,7 +908,7 @@ exports.stack = {
                     }).save();
                   });
                   return successResponse(res, {
-                    message: "You have successfully staked Infinity.AI Tokens",
+                    message: "You have successfully staked UUDT Tokens",
                   });
                 } else {
                   return validarionerrorResponse(res, {
@@ -1764,12 +1764,12 @@ exports.stack = {
                     }).save();
                   });
                   return successResponse(res, {
-                    message: "You have successfully staked Infinity.AI Tokens",
+                    message: "You have successfully staked UUDT Tokens",
                   });
                 } else {
                   return validarionerrorResponse(res, {
                     message:
-                      "please check your Infinity.AI wallet balance do not have infoe amount to stake!",
+                      "please check your UUDT wallet balance do not have infoe amount to stake!",
                   });
                 }
               };
@@ -2622,7 +2622,7 @@ exports.stack = {
                       transactionHash: req.body.transactionHash,
                     }).save();
                     return successResponse(res, {
-                      message: "You have successfully staked Infinity.AI Tokens",
+                      message: "You have successfully staked UUDT Tokens",
                     });
                   } else {
                     return badRequestResponse(res, {
@@ -2973,7 +2973,7 @@ exports.stack = {
                           if: {
                             $eq: [
                               "$$this.Note",
-                              "Infinity.AI Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
+                              "UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
                             ],
                           },
                           then: "$$this.Amount",

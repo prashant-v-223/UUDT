@@ -87,7 +87,7 @@ exports.register = {
               const mailOptions = {
                 from: "infinityai759@gmail.com", // Sender address
                 to: req.body.email, // List of recipients
-                subject: "verification by Infinity.AI", // Subject line
+                subject: "verification by UUDT", // Subject line
                 html: data,
               };
               transport.sendMail(mailOptions, async function (err, info) {
@@ -144,7 +144,7 @@ exports.register = {
               const mailOptions = {
                 from: "infinityai759@gmail.com", // Sender address
                 to: decoded.profile.email, // List of recipients
-                subject: "verification by Infinity.AI", // Subject line
+                subject: "verification by UUDT", // Subject line
                 html: data,
               };
               transport.sendMail(mailOptions, async function (err, info) {
@@ -153,7 +153,7 @@ exports.register = {
                     message: `Email not send error something is wrong ${error}`,
                   });
                 } else {
-                  res.redirect("https://www.infinityiat.io/login?login");
+                  res.redirect("https://uudtf-4byw4xwyb-prashant-v-223.vercel.app/login?login");
                 }
               });
             }
@@ -281,7 +281,7 @@ exports.register = {
             const mailOptions = {
               from: "infinityai759@gmail.com", // Sender address
               to: req.body.email, // List of recipients
-              subject: "verification by Infinity.AI", // Subject line
+              subject: "verification by UUDT", // Subject line
               html: data,
             };
             transport.sendMail(mailOptions, async function (err, info) {

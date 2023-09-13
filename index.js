@@ -365,7 +365,7 @@ schedule.scheduleJob(every24hours1, async () => {
             const data = {
               userId: result._id,
               username: Refflevalncome?.username,
-              Note: "Infinity.AI Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
+              Note: "UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET",
               Amount: incomeAmount,
             };
             await updateRecord(
@@ -379,7 +379,7 @@ schedule.scheduleJob(every24hours1, async () => {
             ).then(async (res1) => {
               await Mainwallatesc({
                 userId: result._id,
-                Note: `Infinity.AI Token WILL BE CREDITED IN PASSIVE CLUB WALLET ${Refflevalncome?.username}`,
+                Note: `UUDT Token WILL BE CREDITED IN PASSIVE CLUB WALLET ${Refflevalncome?.username}`,
                 Amount: incomeAmount,
                 type: 1,
                 balace: res1?.mainWallet,

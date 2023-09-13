@@ -26,7 +26,7 @@ module.exports.ticketsend = (customerEmail, username, id) => {
       "has been updated." +
       "</h4>" +
       "<h4>" +
-      "Infinity.AI" +
+      "UUDT" +
       "</h4>" +
       "<br/>" +
       "<h4>" +

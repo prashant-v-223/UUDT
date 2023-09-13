@@ -316,7 +316,7 @@ exports.admin = {
           })
             .save()
           return successResponse(res, {
-            message: "Infinity.AI price chenge successfully!",
+            message: "UUDT price chenge successfully!",
           });
         } else {
           return badRequestResponse(res, {
@@ -342,7 +342,7 @@ exports.admin = {
         decoded = await cloneDeep(decoded);
         let data = await V4XpriceSchemaDetails.find({});
         return successResponse(res, {
-          message: "Infinity.AI price chenge successfully!",
+          message: "UUDT price chenge successfully!",
           data: data,
         });
       } else {
@@ -383,7 +383,7 @@ exports.admin = {
               }).save();
             });
             return successResponse(res, {
-              message: "Infinity.AI Token Transfer successfully!",
+              message: "UUDT Token Transfer successfully!",
             });
           } else {
             console.log(data);
@@ -405,7 +405,7 @@ exports.admin = {
               }).save();
             });
             return successResponse(res, {
-              message: "Infinity.AI Token Transfer successfully!",
+              message: "UUDTr successfully!",
             });
           }
         } else {
@@ -446,7 +446,7 @@ exports.admin = {
           },
         ]);
         return successResponse(res, {
-          message: "Infinity.AI price chenge successfully!",
+          message: "UUDT price chenge successfully!",
           data: userdata1,
         });
       } else {
