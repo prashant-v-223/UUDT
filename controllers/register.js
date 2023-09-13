@@ -56,7 +56,7 @@ exports.register = {
           OTP += digits[Math.floor(Math.random() * 10)];
         }
         let usernumber = OTP;
-        let finalusename = "IAT" + usernumber;
+        let finalusename = "UUDT" + usernumber;
         const isCreated = await Usermodal({
           ...req.body,
           username: finalusename,
