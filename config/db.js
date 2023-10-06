@@ -5,7 +5,7 @@ mongoose.set("strictQuery", false)
 
 try {
 
-    mongoose.connect(process.env.DB_URI, {
+    mongoose.connect("mongodb+srv://UUDT:Qk08zFG1nL91QVXz@cluster0.bftwyzt.mongodb.net/UUDT", {
         useUnifiedTopology: true,
         useNewUrlParser: true
     })
