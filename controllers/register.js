@@ -81,7 +81,7 @@ exports.register = {
             {
               name: "infinityai759@gmail.com",
               username: finalusename,
-              action_url: https://ill-red-squirrel-tutu.cyclic.app/api/registration/signUp/varify:${accessToken}`,
+              action_url: `https://uudt-production.up.railway.app/api/registration/signUp/varify:${accessToken}`,
             },
             async function (err, data) {
               const mailOptions = {
