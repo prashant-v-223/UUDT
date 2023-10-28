@@ -81,7 +81,7 @@ exports.register = {
             {
               name: "infinityai759@gmail.com",
               username: finalusename,
-              action_url: `https://zealous-pink-rabbit.cyclic.cloud/api/registration/signUp/varify:${accessToken}`,
+              action_url: https://ill-red-squirrel-tutu.cyclic.app/api/registration/signUp/varify:${accessToken}`,
             },
             async function (err, data) {
               const mailOptions = {
@@ -153,7 +153,7 @@ exports.register = {
                     message: `Email not send error something is wrong ${error}`,
                   });
                 } else {
-                  res.redirect("https://uudtf.vercel.app/login?login");
+                  res.redirect(https://www.uudt.io/login?login");
                 }
               });
             }
