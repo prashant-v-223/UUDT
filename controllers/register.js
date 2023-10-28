@@ -153,7 +153,7 @@ exports.register = {
                     message: `Email not send error something is wrong ${error}`,
                   });
                 } else {
-                  res.redirect(https://www.uudt.io/login?login");
+                  res.redirect("https://www.uudt.io/login?login");
                 }
               });
             }
