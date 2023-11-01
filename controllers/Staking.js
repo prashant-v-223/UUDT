@@ -2595,12 +2595,12 @@ exports.stack = {
                       WalletType: "DAPP-Wallet",
                       DailyReword:
                         req.body.Amount <= 2500
-                          ? Number(req.body.Amount / 730) * 2
+                          ? Number(req.body.Amount / 365) * 2
                           : req.body.Amount >= 2550 && req.body.Amount <= 10000
-                            ? Number(req.body.Amount / 730) * 2.25
+                            ? Number(req.body.Amount / 365) * 2.25
                             : req.body.Amount >= 10050 && req.body.Amount <= 25000
-                              ? Number(req.body.Amount / 730) * 2.5
-                              : Number(req.body.Amount / 730) * 3,
+                              ? Number(req.body.Amount / 365) * 2.5
+                              : Number(req.body.Amount / 365) * 3,
                       bonusAmount:
                         req.body.Amount <= 2500
                           ? 200
