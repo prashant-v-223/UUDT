@@ -15,7 +15,7 @@ const Staking = new Schema(
     },
     TotaldaysTosendReword: {
       type: Number,
-      default: 730,
+      default: 365,
       required: true,
     },
     DailyReword: {
