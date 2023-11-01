@@ -867,12 +867,12 @@ exports.stack = {
                     WalletType: "Main Wallet",
                     DailyReword:
                       req.body.Amount <= 2000
-                        ? Number(req.body.Amount / 730) * 2
+                        ? Number(req.body.Amount / 365) * 2
                         : req.body.Amount >= 2040 && req.body.Amount <= 8000
-                          ? Number(req.body.Amount / 730) * 2.25
+                          ? Number(req.body.Amount / 365) * 2.25
                           : req.body.Amount >= 8040 && req.body.Amount <= 20000
-                            ? Number(req.body.Amount / 730) * 2.5
-                            : Number(req.body.Amount / 730) * 3,
+                            ? Number(req.body.Amount / 365) * 2.5
+                            : Number(req.body.Amount / 365) * 3,
                     bonusAmount:
                       req.body.Amount <= 2000
                         ? 200
@@ -1723,12 +1723,12 @@ exports.stack = {
                     WalletType: "E-Wallet",
                     DailyReword:
                       req.body.Amount <= 2500
-                        ? Number(req.body.Amount / 730) * 2
+                        ? Number(req.body.Amount / 365) * 2
                         : req.body.Amount >= 2040 && req.body.Amount <= 8000
-                          ? Number(req.body.Amount / 730) * 2.25
+                          ? Number(req.body.Amount / 365) * 2.25
                           : req.body.Amount >= 8040 && req.body.Amount <= 20000
-                            ? Number(req.body.Amount / 730) * 2.5
-                            : Number(req.body.Amount / 730) * 3,
+                            ? Number(req.body.Amount / 365) * 2.5
+                            : Number(req.body.Amount / 365) * 3,
                     bonusAmount:
                       req.body.Amount <= 2500
                         ? 200
