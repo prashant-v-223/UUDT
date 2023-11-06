@@ -3007,7 +3007,7 @@ exports.stack = {
           new Date(new Date(stakingData[0]?.createdAt).setMonth(
             new Date(
               stakingData[0].createdAt
-            ).getMonth() + 42
+            ).getMonth() + 12
           )).toDateString() : null,
         mystack: aggregatedUserData[0].total,
         lockamount: aggregatedUserData[0].total2,
