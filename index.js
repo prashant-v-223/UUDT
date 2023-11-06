@@ -47,7 +47,7 @@ schedule.scheduleJob(every24hours, async () => {
             },
           },
         ]);
-        if (elapsedTimeInDays.length < 730) {
+        if (elapsedTimeInDays.length < 365) {
           const updatedWallet = await updateRecord(
             Walletmodal,
             { userId: record.userId },
