@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Wallet UI</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .wallet-app {
+        width: 450px;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 25px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .wallet-app:hover {
+        box-shadow: 0 12px 50px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Header */
+      .wallet-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .menu-icon,
+      .user-icon {
+        font-size: 28px;
+        cursor: pointer;
+        color: #00ff6a;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .menu-icon:hover,
+      .user-icon:hover {
+        color: #33ff99;
+      }
+
+      h2 {
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      /* Wallet Card Section */
+      .wallet-card-section {
+        margin: 25px 0;
+      }
+
+      .wallet-card {
+        background: linear-gradient(145deg, #4caf50, #2e7d32);
+        border-radius: 25px;
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 220px;
+        color: #ffffff;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .wallet-card:before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .wallet-card:hover:before {
+        right: -50px;
+      }
+
+      .card-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .card-logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .card-balance {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .card-balance h1 {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+
+      .card-balance p {
+        font-size: 18px;
+        opacity: 0.8;
+      }
+
+      /* Action Buttons */
+      .wallet-actions {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0;
+      }
+
+      .action-btn {
+        background: linear-gradient(145deg, #00ff6a, #33ff99);
+        color: #121212;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 25px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .action-btn:hover {
+        background: linear-gradient(145deg, #33ff99, #00cc66);
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      /* Asset List */
+      .wallet-assets {
+        margin-bottom: 25px;
+      }
+
+      .asset-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        margin-bottom: 12px;
+        transition: transform 0.3s ease;
+      }
+
+      .asset-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .asset-info {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .asset-name {
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      .asset-price {
+        font-size: 16px;
+        color: #888;
+      }
+
+      .asset-change {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 10px;
+      }
+
+      .positive {
+        color: #00ff6a;
+      }
+
+      .negative {
+        color: #ff4d4d;
+      }
+
+      /* Footer Navigation */
+      .wallet-footer {
+        display: flex;
+        justify-content: space-around;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      }
+
+      .footer-icon {
+        font-size: 26px;
+        color: #777;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      .footer-icon:hover {
+        color: #00ff6a;
+      }
+
+      .footer-icon.active {
+        color: #00ff6a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wallet-app">
+      <!-- Header -->
+      <header class="wallet-header" style="padding-top: 40px;">
+        <div class="menu-icon">☰</div>
+        <h2>My Wallet</h2>
+        <div class="user-icon">👤</div>
+      </header>
+
+      <!-- Card Section -->
+      <section class="wallet-card-section">
+        <div class="wallet-card">
+          <div class="card-info">
+            <div class="card-number">**** 8980</div>
+            <div class="card-logo">
+              <img src="card-logo.png" alt="Logo" />
+            </div>
+          </div>
+          <div class="card-balance">
+            <p>Available Balance</p>
+            <h1>$29,390.00</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- Action Buttons -->
+      <section class="wallet-actions">
+        <button class="action-btn">Deposit</button>
+        <button class="action-btn">withdraw</button>
+        <button class="action-btn">Across</button>
+      </section>
+
+      <!-- Asset List -->
+      <section class="wallet-assets">
+        <div class="asset-item">
+          <div class="asset-info">
+            <span class="asset-name">BTC</span>
+            <span class="asset-price">$348,814.51</span>
+          </div>
+          <div class="asset-change negative">-2.77%</div>
+        </div>
+        <div class="asset-item">
+          <div class="asset-info">
+            <span class="asset-name">USDT</span>
+            <span class="asset-price">$579,486.55</span>
+          </div>
+          <div class="asset-change positive">+1.75%</div>
+        </div>
+        <div class="asset-item">
+          <div class="asset-info">
+            <span class="asset-name">FOO</span>
+            <span class="asset-price">$721,415.56</span>
+          </div>
+          <div class="asset-change positive">+5.66%</div>
+        </div>
+      </section>
+
+      <!-- Footer Navigation -->
+      <footer class="wallet-footer">
+        <div class="footer-icon active">💼</div>
+        <div class="footer-icon">🌐</div>
+        <div class="footer-icon">💬</div>
+        <div class="footer-icon">📊</div>
+      </footer>
+    </div>
+  </body>
+</html>

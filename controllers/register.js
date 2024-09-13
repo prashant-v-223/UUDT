@@ -98,7 +98,7 @@ exports.register = {
                 } else {
                   return successResponse(res, {
                     message:
-                      "Verification link has been sent successfully on your email!",
+                      "done!",
                   });
                 }
               });
